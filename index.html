@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".box").fullpage({
+				navigation:true,
+				navigationTooltips:["登录百度舆情","领先：数据收集与处理","全面：舆情分析逻辑与架构","专业：专业数据可视化"],
+				afterLoad:function(anchorLink,index){
+					$(".container").removeClass("active")
+					$(".container").eq(index-1).addClass("active")
+					
+				}
+					});
+				$(".down").click(function(){
+					$.fn.fullpage.moveSectionDown();
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="top"></div>
+		<div class="box">
+			<div class="section">
+				<div class="container">
+					<!--<img src="image/cloud1.png" alt="" class="yun1"/>
+					<img src="image/cloud2.png" alt="" class="yun2"/>
+					<img src="image/color3.png" alt="" class="yun3"/>-->
+					<div class="yun1"></div>
+					<img src="image/19.png" alt="" class="word" />
+					<img src="image/10.png" alt="" class="plane" />
+					<img src="image/33.png" alt="" class="boat" />
+					<div class="zz"></div>
+					<img src="image/14.png" alt=""  class="ice1"/>
+					<img src="image/16.png" alt=""  class="ice2"/>
+					<img src="image/5.png" alt=""  class="ice3"/>
+					<img src="image/2.png" class="down"/>
+				</div>
+			</div>
+			<div class="section">
+				<div class="container">
+					<img src="image/2.png" class="down"/>
+					<img src="image/11.png" class="zileft"/>
+					<div class="ziright">
+						<p class="p1">数据收集与处理</p>
+						<p class="p2">15年专业数据收集与语义分析技术积<br/>累卓越极致，不断攀登</p>
+					</div>
+					<img src="image/7.png" alt="" class="brain"/>
+					<div class="block block1"></div>
+					<div class="block block2"></div>
+					<div class="block block3"></div>
+					<div class="block block4"></div>
+					<div class="block block5"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="container">
+					<img src="image/2.png" class="down"/>
+					<img src="image/12.png" class="zileft"/>
+					<div class="ziright">
+						<p class="p1">舆情分析逻辑与架构</p>
+						<p class="p2">声量诊断、传播分析、情感提炼、受众画像<br/>有方法论,更有智慧</p>
+					</div>
+					<img src="image/1.png" alt="" class="brain"/>
+					<img src="image/6.png" alt="" class="cao"/>
+					<div class="squre squre1"></div>
+					<div class="squre squre2"></div>
+					<div class="squre squre3"></div>
+					<div class="squre squre4"></div>
+					<div class="squre squre5"></div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="container">
+					<img src="image/134.png" class="zileft"/>
+					<div class="ziright">
+						<p class="p1">专业数据可视化</p>
+						<p class="p2">非凡的数据洞悉和可视化能力<br/>精研数据,惊艳所见</p>
+					</div>
+					<img src="image/90.png" alt="" class="brain"/>
+					<img src="image/8.png" alt="" class="circle" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
